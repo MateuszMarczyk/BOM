@@ -1,89 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BOM</title>
-<style>
-body {
-    padding: 0;
-    margin: 0;
-    background: lightgray;
-    
-}
-.site-nav {
-    height: 20px;
-    width: 100%;
-    background: rgb(160, 158, 158);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding: 10px;
-    box-sizing: border-box;
-}
-.site-menu-trigger {
-    border: 0;
-    border-radius: 10px;
-    background: #ffffff;
-
-}
-.site-menu {
-    display: flex;
-    box-sizing: border-box;
-    position: absolute;
-    top: 20px;
-    left: 0;
-    height: 100%;
-    width: 300px;
-    background: red;
-        
-}
-.site-menu ul{
-    width: 90%;
-    padding: 0;
-    list-style-type: none;
-    margin: 0 10px;
-    display: flex;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    }
-.site-menu li {
-    background: white;
-    margin-top: 20px;
-    border-radius: 5 px;
-    flex-basis: 100%;
-    display: flex;
-    height: 30px;
-}
-.site-menu a {
-    display: flex;
-    padding: 10px;
-    box-sizing: border-box;
-    text-decoration: none;
-    align-items: center;
-    height: 100%;
-    width: 100%;
-    border-radius: 5px;
-}
-
-
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="styles.css">
+  <title>
+    Rozsuwane menu boczne w samym CSS 
+  </title>
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="site-nav">
-        <button class="site-nav-trigger">PLC</button>
-        <div class="site-menu">
-          <ul>
-              <li>
-                   <a href="ELP11_v1">ELP11_v1</a>
-              </li>
-              <li>
-                   <a href="ELP11_v2">ELP11_v2</a>
-              </li>
-          </ul>
-        </div>
-    </nav>
-    
-    
+  <nav class="site-nav">
+    <button class="side-menu-trigger">Menu</button>
+    <aside class="side-menu">
+      <ul>
+        <li>
+          <a href="">
+            item1
+          </a>
+        </li>
+        <li>
+          <a href="">
+            item2
+          </a>
+        </li>
+        <li>
+          <a href="">
+            item3
+          </a>
+        </li>
+        <li>
+          <a href="">
+            item4
+          </a>
+        </li>
+        <li>
+          <a href="">
+            item5
+          </a>
+        </li>
+      </ul>
+  </aside>
+  </nav>
 </body>
 </html>
