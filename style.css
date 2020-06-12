@@ -1,26 +1,29 @@
-body {
-    padding; 0;
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    padding: 0;
     margin: 0;
     overflow: hidden;
     background: #696e9e;
   }
-  
+
   .site-nav {
     display: flex;
     justify-content: flex;
     align-items: center;
     padding: 10px;
-    box-sizing: border-box;
     height: 40px;
     width: 100%;
     background: #4a4d6d;
   }
-  
+
   .side-menu-trigger {
     color: white;
     text-decoration: underline;
     padding: 0;
-    
+
     width: 35px;
     height: 35px;
     border: 0;
@@ -28,14 +31,11 @@ body {
     background: transparent;
     position: absolute;
     transition: 0.3s transform linear;
-    box-sizing: border-box;
-    outline: none; 
-    
+    outline: none;
   }
-  
+
   .side-menu {
     display: flex;
-    box-sizing: border-box;
     position: absolute;
     height: 100%;
     width: 300px;
@@ -44,7 +44,7 @@ body {
     padding: 0;
     transition: 0.3s transform ease-in-out;
   }
-  
+
   .side-menu ul {
     position: absolute;
     display: flex;
@@ -53,9 +53,9 @@ body {
     margin: 0 10px;
     padding: 0;
     list-style-type: none;
-    align-content: flex-start
+    align-content: flex-start;
   }
-  
+
   .side-menu ul li {
     display: flex;
     height: 30px;
@@ -65,10 +65,8 @@ body {
     color: #696e9e;
     border-radius: 5px;
     overflow: hidden;
-    
   }
 
-  
   .side-menu ul li a {
     display: flex;
     padding: 10px;
@@ -77,50 +75,45 @@ body {
     height: 100%;
     background: #ffffff;
     text-decoration: none;
-    box-sizing: border-box;
   }
-  
-  .side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
-    transform: translateX(300px); 
+
+  .side-menu-trigger:focus ~ .side-menu,
+  .side-menu:hover {
+    transform: translateX(300px);
   }
+
   .side-menu ul li li {
     display: block;
     padding: 10px;
     align-items: center;
     width: 100%;
     height: 10px;
-    background:#2b06d1;
+    background: #2b06d1;
     text-decoration: none;
-    box-sizing: border-box;
     margin: 40px;
   }
 
-
-.side-menu-trigger::after {
-    content: '';
+  .side-menu-trigger::after {
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     border-top: 5px solid white;
-    transform: translateY(10px);
-  }    
-      
-  .side-menu-trigger::after {
     transform: translateY(25px);
     transition: 0.3s transform linear;
-
-    
   }
+
   .side-menu-trigger:focus {
     transform: rotate(45deg) translateX(-3px);
-    border: none;    
-    
+    border: none;
   }
+
   .side-menu-trigger:focus::after {
     transform: rotate(-90deg) translateX(-15px);
   }
+
   .side-menu-trigger:focus::before {
     transform: translateY(15px);
     border: none;
-  }  
+  }
