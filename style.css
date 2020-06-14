@@ -19,8 +19,7 @@ body {
   .side-menu-trigger {
     color: white;
     text-decoration: underline;
-    padding: 0;
-    
+    padding: 0;    
     width: 35px;
     height: 35px;
     border: 0;
@@ -38,9 +37,9 @@ body {
     box-sizing: border-box;
     position: absolute;
     height: 100%;
-    width: 300px;
+    width: 900px;
     top: 20px;
-    left: -300px;
+    left: -900px;
     padding: 0;
     transition: 0.3s transform ease-in-out;
   }
@@ -54,6 +53,7 @@ body {
     padding: 0;
     list-style-type: none;
     align-content: flex-start
+    
   }
   
   .side-menu ul li {
@@ -81,7 +81,7 @@ body {
   }
   
   .side-menu-trigger:focus ~ .side-menu, .side-menu:hover {
-    transform: translateX(300px); 
+    transform: translateX(900px); 
   }
   .side-menu ul li li {
     display: block;
